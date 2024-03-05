@@ -14,6 +14,8 @@ steps += 1
  */
 var distance = 0
 distance += 50
+distance *= 3
+print(distance)
 /*:
 [Previous](@previous)  |  page 4 of 8  |  [Next: Exercise - Order of Operations](@next)
  */

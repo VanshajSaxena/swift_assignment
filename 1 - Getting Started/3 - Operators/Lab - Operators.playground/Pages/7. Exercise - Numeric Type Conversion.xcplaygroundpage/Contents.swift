@@ -3,14 +3,15 @@
 
  Create an integer constant `x` with a value of 10, and a double constant `y` with a value of 3.2. Create a constant `multipliedAsIntegers` equal to `x` times `y`. Does this compile? If not, fix it by converting your `Double` to an `Int` in the mathematical expression. Print the result.
  */
-
-
+let x = 10
+let y:Double = 3.2
+let multipliedAsIntegers = x * Int(y)
+print(multipliedAsIntegers)
 //:  Create a constant `multipliedAsDoubles` equal to `x` times `y`, but this time convert the `Int` to a `Double` in the expression. Print the result.
-
-
+let multipliedAsDoubles = Double(x) * y
+print(multipliedAsDoubles)
 //:  Are the values of `multipliedAsIntegers` and `multipliedAsDoubles` different? Print a statement to the console explaining why.
-
-
+print("Yes, the values of multipliedAsDoubles and multipliedAsIntegers are different. This is because of how the two values are calculated, in the multipliedAsIntegers expression, the Double is converted to Int creating a rounding error in the result.\rAnd in the multipliedAsDoubles expression the int is converted to a Double making the result a Double type with high precision.")
 /*:
 [Previous](@previous)  |  page 7 of 8  |  [Next: App Exercise - Converting Types](@next)
  */
