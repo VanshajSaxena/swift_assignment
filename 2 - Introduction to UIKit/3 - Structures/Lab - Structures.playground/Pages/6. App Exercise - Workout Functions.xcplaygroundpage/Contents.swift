@@ -21,7 +21,7 @@ run.postWorkoutStats()
 struct Steps {
     var steps: Int
     var goal: Int
-    func takeStep() {
+    mutating func takeStep() {
         steps += 1
     }
 }
