@@ -5,7 +5,7 @@
  */
 let userInputAge: String = "34e"
 func checkAge(input: String) -> Int? {
-    var userAge = Int(input)
+    let userAge = Int(input)
     if let  age = userAge {
         age > 18 ? print("Welcome!") : print("Sorry, but you aren't old enough to use our app.")
     } else {print("Sorry, something went wrong. Can you please re-enter your age?")}
